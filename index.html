@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="מיצי-נט״ "
+        description="ברוכים הבאים למיצי-נט, החנות המובילה למוצרי חיות מחמד! גלו את מגוון המוצרים שלנו לכל סוגי החיות, כולל מזון, צעצועים, אביזרים ועוד. היכנסו עכשיו ותיהנו ממגוון המבצעים!">
+
+    <meta
+        content="Pet store, Pets, Dogs, Cats, Pet supplies, Pet accessories, Pet food, Toys for pets, Pet care, Online pet store, Mitsi-Net, Animal lovers, Pet products, Dog food, Cat food"
+        name="keywords">
+    <meta name="author" content="Adel Mohsen">
+
+    <link rel="stylesheet" href="cssFiles/style.css">
+    <link rel="stylesheet" href="cssFiles/style_mouse.css">
+   
+    <title>Registeration for Mechi Net pet store</title>
+    
+</head>
+
+
+
+<header>
+    <div class="inner">
+        <div class="logo">
+            <div>
+                <!-- The below line can be an image or a h1, either will work -->
+                <img src="images/logo.png" alt="Logo" >
+                <!-- <h1>My Logo</h1> -->
+            </div>
+        </div>
+
+        <nav>
+            <!-- Each of the below lines look complicated. There is a reason for this markup though!
+            <li> tag will be the container for the table.
+            <span> will be the part that centers the content inside it
+            <a> is the actual clickable part -->
+            <li><span><a href="">About</a></span></li>
+            <li><span><a href="">Work</a></span></li>
+            <li><span><a href="">History</a></span></li>
+            <li><span><a href="" class="button">Contact</a></span></li>
+            <!-- On the line above, remove the class="button" if you don't want the final
+            element to be a button -->
+        </nav>
+    </div>
+</header>
+<body>
+    <h2 class="form__title1">מועדון לקוחות</h2>
+    <div class="container right-panel-active">
+        
+        <!-- REGISTER -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="registrationForm">
+               
+                <h4 class="form__title">הצטרפו למועדון לקוחות מיצי-נט</h4>
+                <input type="text" id="name"  placeholder="שם פרטי ושם משפחה" class="input" required/>
+                <input type="tel" id="phone" placeholder="מספר טלפון" class="input" required>
+                <input type="email" id="email" placeholder="כתובת אימייל" class="input" required/>
+                <input type="password" id="password" placeholder="סיסמא" class="input"id="password1" required />
+                <input type="password" id="confirmPassword" placeholder="וידא סיסמא "class="input" id="password2" required />
+                  <button type="submit" class="btn">הרשמה</button>
+            </form>
+        </div>
+    
+        <!-- UNSUBSCRIBE -->
+        <div class="container__form container--signin">
+            <form action="#" class="form" id="deleteForm">
+                <h2 class="form__title">מחק אותי מהמאגר</h2>
+                <input type="email" id="unsubscribeEmail" placeholder="כתובת אימייל" class="input"  />
+                <input type="password" id="unsubscribePassword" placeholder="סיסמא" class="input" />
+                <br>
+                <button type="submit" class="btn">מחק</button>
+            </form>
+        </div>
+    
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">מחק אותי</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">הצטרפות </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="jsfILES/main.js"></script>
+    <script defer src="jsfILES/main2.js"></script>
+    <script src="jsfiles/mouseMove.js"></script> 
+</body>
+</html>
